@@ -151,7 +151,6 @@ from PIL import Image
 from tqdm import tqdm
 from torchvision.io import read_image
 import yaml, os
-from metrics.eval import *
 
 source_images = []
 generated_images = []
