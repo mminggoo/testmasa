@@ -156,7 +156,7 @@ eval_prompts = []
 
 import argparse
 
-parser = argparse.ArgumentParser(description="Simple example of a training script.")
+parser = argparse.ArgumentParser()
 parser.add_argument("--source", type=str, default=None)
 parser.add_argument("--prompt", type=str, default=None)
 parser.add_argument("--output_dir_root", type=str, default="/content/")
