@@ -1,0 +1,1800 @@
+multi_object_001:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_001.png"
+  origin_prompt:
+    "a cat sitting on the table next to a vase of flowers"
+  target_prompt:
+    "a tiger sitting on the table next to a bottle of grapes"
+  guided_prompt:
+    [["", " sitting on the table next to a vase of flowers"], ["a cat sitting on the table next to ", ""]]
+  origin_change:
+    ['a cat', 'a vase of flowers']
+  target_change:
+    ["a tiger", "a bottle of grapes"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+
+multi_object_002:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_002.png"
+  origin_prompt:
+    "a vase with leaves in it on the right on a table next to a wooden framed decorations on the wall on the left"
+  target_prompt:
+    "a vase with a balloon in it on the right on a table next to a self-portrait of Van Gogh on the wall on the left"
+  guided_prompt:
+    [["a vase with ", " in it on the right on a table next to a wooden framed decorations on the wall on the left"], ["a vase with leaves in it on the right on a table next to a ", " on the wall on the left"]]
+  origin_change:
+    ['leaves', 'wooden framed decorations']
+  target_change:
+    ["a balloon", "self-portrait of Van Gogh"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_003:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_003.png"
+  origin_prompt:
+    "a dog on the right and a cat on the left sitting on a bed"
+  target_prompt:
+    "a golden retriever on the right and a owl on the left sitting on a bed"
+  guided_prompt:
+    [["a ", " on the right and a cat on the left sitting on a bed"], ["a dog on the right and a ", " on the left sitting on a bed"]]
+  origin_change:
+    ['dog on the right', 'cat on the left']
+  target_change:
+    ['golden retriever', 'owl']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_004:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_004.png"
+  origin_prompt:
+    "a bee flying out of a glass jar in a green and red leafy basket"
+  target_prompt:
+    "a butterfly flying out of a glass jar filled with a parrot"
+  guided_prompt:
+    [["a", " flying out of a glass jar in a green and red leafy basket"], ["a bee flying out of ", ""]]
+  origin_change:
+    ['bee', 'a glass jar in a green and red leafy basket']
+  target_change:
+    ['butterfly', 'a glass jar filled with a parrot']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_005:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_005.png"
+  origin_prompt:
+    "a vase on the left next to a book on the right on a table"
+  target_prompt:
+    "a teapot on the left next to a plate with fried egg and fork on the right on a table"
+  guided_prompt:
+    [["a ", " on the left next to a book on the right on a table"], ["a vase on the left next to a ", " on the right on a table"]]
+  origin_change:
+    ['vase', 'book']
+  target_change:
+    ['teapot', 'plate with fried egg and fork']
+  reinversion_steps:
+    10
+  reassembly_step:
+    30
+
+multi_object_006:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_006.png"
+  origin_prompt:
+    "a dog wearing a santa hat on the right pushing a Christmas cart on the left"
+  target_prompt:
+    "a penguin wearing a santa hat on the right pushing a cardboard box of presents on the left"
+  guided_prompt:
+    [["a ", " wearing a santa hat on the right pushing a Christmas cart on the left"], ["a dog wearing a santa hat on the right pushing a ", " on the left"]]
+  origin_change:
+    ['dog', 'Christmas cart']
+  target_change:
+    ['penguin', "cardboard box of presents"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_007:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_007.png"
+  origin_prompt:
+    "a book on a round wooden table next a bottle of straw"
+  target_prompt:
+    "a towel on a round gold table next a bottle of straw"
+  guided_prompt:
+    [["a ", " on a round wooden table next a bottle of straw"], ["a book on a round ", " next a bottle of straw"]]
+  origin_change:
+    ['book', 'wooden table']
+  target_change:
+    ['towel', 'gold table']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_008:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_008.png"
+  origin_prompt:
+    "a cat wearing a straw hat is lying on the carpet"
+  target_prompt:
+    "a tiger wearing a colorful straw hat is lying on the carpet"
+  guided_prompt:
+    [["a ", " wearing a straw hat is lying on the carpet"], ["a cat wearing a ", " is lying on the carpet"]]
+  origin_change:
+    ['cat', 'straw hat']
+  target_change:
+    ['tiger', "colorful straw hat"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_009:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_009.png"
+  origin_prompt:
+    "a bowl of dumplings on the left and chopsticks on the right"
+  target_prompt:
+    "a bowl of fry rice on the left and knife on the right"
+  guided_prompt:
+    [["a bowl of ", " on the left and chopsticks on the right"], ["a bowl of dumplings on the left and ", " on the right"]]
+  origin_change:
+    ['dumplings', 'chopsticks']
+  target_change:
+    ['fry rice', 'knife']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_010:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_010.png"
+  origin_prompt:
+    "a small house in the middle of a grassy field and a row of tables to its right" 
+  target_prompt:
+    "a small church in the middle of a grassy field and a tank to its right"
+  guided_prompt:
+    [["a small ", " in the middle of a grassy field and a row of tables to its right"], ["a small house in the middle of a grassy field and ", " to its right"]]
+  origin_change:
+    ['house', 'a row of tables']
+  target_change:
+    ['church', 'a tank']
+  reinversion_steps:
+    10
+  reassembly_step:
+    16
+
+multi_object_011:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_011.png"
+  origin_prompt:
+    "a bird perched on a branch of a tree"
+  target_prompt:
+    "a chicken perched on a bamboo"
+  guided_prompt:
+    [["a ", " perched on a branch of a tree"], ["a bird perched on ", ""]]
+  origin_change:
+    ['bird', 'a branch of a tree']
+  target_change:
+    ['chicken', 'a bamboo']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_012:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_012.png"
+  origin_prompt:
+    "a bird perched on a branch of a tree"
+  target_prompt:
+    "a parrot perched on a bamboo"
+  guided_prompt:
+    [["a ", " perched on a branch of a tree"], ["a bird perched on ", ""]]
+  origin_change:
+    ['bird', 'a branch of a tree']
+  target_change:
+    ['parrot', 'a bamboo']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_013:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_013.png"
+  origin_prompt:
+    "a starfish lying on the beach with foam on its left side"
+  target_prompt:
+    "a stuffed toy starfish lying on the beach with chequered blanket on its left side"
+  guided_prompt:
+    [["a ", " lying on the beach with foam on its left side"], ["a starfish lying on the beach with ", " on its left side"]]
+  origin_change:
+    ['starfish', 'foam']
+  target_change:
+    ['stuffed toy starfish', 'chequered blanket']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_014:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_014.png"
+  origin_prompt:
+    "a car parked in front of a wooden house"
+  target_prompt:
+    "a cabriolet parked in front of a glass house"
+  guided_prompt:
+    [["a ", " parked in front of a wooden house"], ["a car parked in front of a ", ""]]
+  origin_change:
+    ['car out of the glass', 'wooden house']
+  target_change:
+    ['cabriolet', 'glass house']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_015:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_015.png"
+  origin_prompt:
+    "a lighthouse sits atop a sea with a blue sky"
+  target_prompt:
+    "a Disney castle sits atop a sea with a sky with sunset"
+  guided_prompt:
+    [["a ", " sits atop a sea with a blue sky"], ["a lighthouse sits atop a sea with a ", ""]]
+  origin_change:
+    ['lighthouse', 'blue sky']
+  target_change:
+    ['Disney castle', "sky with sunset"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_016:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_016.png"
+  origin_prompt:
+    "a lighthouse sits atop a sea with a blue sky"
+  target_prompt:
+    "a crochet lighthouse sits atop a sea with a sky with sunset"
+  guided_prompt:
+    [["a ", " sits atop a sea with a blue sky"], ["a lighthouse sits atop a sea with a ", ""]]
+  origin_change:
+    ['lighthouse', 'blue sky']
+  target_change:
+    ['crochet lighthouse', "sky with sunset"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_017:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_017.png"
+  origin_prompt:
+    "a lighthouse sits atop a sea with a blue sky"
+  target_prompt:
+    "a rocket taking off sits atop a sea with a sky with sunset"
+  guided_prompt:
+    [["a ", " sits atop a sea with a blue sky"], ["a lighthouse sits atop a sea with a ", ""]]
+  origin_change:
+    ['lighthouse', 'blue sky']
+  target_change:
+    ['rocket taking off', "sky with sunset"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_018:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_018.png"
+  origin_prompt:
+    "a lighthouse sits atop a sea with a blue sky"
+  target_prompt:
+    "a rocket taking off sits atop a sea with a aurora sky"
+  guided_prompt:
+    [["a ", " sits atop a sea with a blue sky"], ["a lighthouse sits atop a sea with a ", ""]]
+  origin_change:
+    ['lighthouse', 'blue sky']
+  target_change:
+    ['rocket taking off', "aurora sky"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_019:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_019.png"
+  origin_prompt:
+    "a fork on the left and a steak on the right on a plate with rosemary sprigs"
+  target_prompt:
+    "a scoop on the left and a cup of coffe on the right on a plate with rosemary sprigs"
+  guided_prompt:
+    [["a ", " on the left and a steak on the right on a plate with rosemary sprigs"], ["a fork on the left and a ", " on the right on a plate with rosemary sprigs"]]
+  origin_change:
+    ['fork', 'steak']
+  target_change:
+    ['scoop', 'cup of coffe']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_020:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_020.png"
+  origin_prompt:
+    "a pickup surrounded by green trees and houses"
+  target_prompt:
+    "a rusty pickup surrounded by yellow trees and houses"
+  guided_prompt:
+    [["a ", " surrounded by green trees and houses"], ["a pickup surrounded by ", " and houses"]]
+  origin_change:
+    ['pickup', 'green trees']
+  target_change:
+    ['rusty pickup', 'yellow trees']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_021:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_021.png"
+  origin_prompt:
+    "a pickup surrounded by green trees and houses"
+  target_prompt:
+    "a Lego pickup surrounded by yellow trees and houses"
+  guided_prompt:
+    [["a ", " surrounded by green trees and houses"], ["a pickup surrounded by ", " and houses"]]
+  origin_change:
+    ['pickup', 'green trees']
+  target_change:
+    ['Lego pickup', 'yellow trees']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+    
+multi_object_022:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_022.png"
+  origin_prompt:
+    "a stack of pancakes on a plate next to a cup of milk"
+  target_prompt:
+    "a cake on a plate next to a cup of coffee"
+  guided_prompt:
+    [["", " on a plate next to a cup of milk"], ["a stack of pancakes on a plate next to ", ""]]
+  origin_change:
+    ["a stack of pancakes", "a cup of milk"]
+  target_change:
+    ["a cake", "a cup of coffee"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_023:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_023.png"
+  origin_prompt:
+    "a bowl of cigarettes with a spoon on a concrete surface"
+  target_prompt:
+    "a bowl of noodles with a makeup brush on a concrete surface"
+  guided_prompt:
+    [["", " with a spoon on a concrete surface"], ["a bowl of cigarettes with a ", " on a concrete surface"]]
+  origin_change:
+    ["a bowl of cigarettes", "spoon"]
+  target_change:
+    ["a bowl of noodles", "makeup brush"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_024:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_024.png"
+  origin_prompt:
+    "a colorful van parked on a snowy street, next to a building"
+  target_prompt:
+    "a Lego van parked on a snowy street, next to an ancient roman architecture"
+  guided_prompt:
+    [["", " parked on a snowy street, next to a building"], ["a colorful van parked on a snowy street, next to ", ""]]
+  origin_change:
+    ["a colorful van", "a building"]
+  target_change:
+    ["a Lego van", "an ancient roman architecture"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_025:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_025.png"
+  origin_prompt:
+    "a book on a wooden floor"
+  target_prompt:
+    "a newspaper on a marble floor"
+  guided_prompt:
+    [["", " on a wooden floor"], ["a book on ", ""]]
+  origin_change:
+    ["a book", "a wooden floor"]
+  target_change:
+    ["a newspaper", "a marble floor"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_026:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_026.png"
+  origin_prompt:
+    "a pair of black shoes on a wooden floor"
+  target_prompt:
+    "a pair of black boots on a carpet"
+  guided_prompt:
+    [["", " on a wooden floor"], ["a pair of black shoes on ", ""]]
+  origin_change:
+    ["a pair of black shoes", "a wooden floor"]
+  target_change:
+    ["a pair of black boots", "a carpet"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_027:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_027.png"
+  origin_prompt:
+    "a field of colorful tulips under a stormy sky"
+  target_prompt:
+    "a field of colorful balloons under a starry sky"
+  guided_prompt:
+    [["", " under a stormy sky"], ["a field of colorful tulips under ", ""]]
+  origin_change:
+    ["a field of colorful tulips", "a stormy sky"]
+  target_change:
+    ["a field of colorful balloons", "a starry sky"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_028:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_028.png"
+  origin_prompt:
+    "a lighthouse on rocks in the water"
+  target_prompt:
+    "a rocket on a ship in the water"
+  guided_prompt:
+    [["", " on rocks in the water"], ["a lighthouse on ", " in the water"]]
+  origin_change:
+    ["a lighthouse", "rocks"]
+  target_change:
+    ["a rocket", "a ship"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_029:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_029.png"
+  origin_prompt:
+    "a vase with leaves in it on the right on a table next to a wooden framed decorations on the wall on the left"
+  target_prompt:
+    "a vase with a colorful balloon in it on the right on a table next to The Mona Lisa of Leonardo da Vinci on the wall on the left"
+  guided_prompt:
+    [["a vase with ", " in it on the right on a table next to a wooden framed decorations on the wall on the left"], ["a vase with leaves in it on the right on a table next to ", " on the wall on the left"]]
+  origin_change:
+    ['leaves', 'wooden framed decorations']
+  target_change:
+    ['a colorful balloon', 'The Mona Lisa of Leonardo da Vinci']
+  reinversion_steps:
+    10
+  reassembly_step:
+    18
+
+multi_object_030:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_030.png"
+  origin_prompt:
+    "a vase with leaves in it on the right on a table next to a wooden framed decorations on the wall on the left"
+  target_prompt:
+    "a vase with a sunflower in it on the right on a table next to The Starry Night of Vincent van Gogh on the wall on the left"
+  guided_prompt:
+    [["a vase with ", " in it on the right on a table next to a wooden framed decorations on the wall on the left"], ["a vase with leaves in it on the right on a table next to ", " on the wall on the left"]]
+  origin_change:
+    ['leaves', 'wooden framed decorations']
+  target_change:
+    ['a sunflower', 'The Starry Night of Vincent van Gogh']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_031:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_031.png"
+  origin_prompt:
+    "a vase with leaves in it on the right on a table next to a wooden framed decorations on the wall on the left"
+  target_prompt:
+    "a vase with a clipart lollipop in it on the right on a table next to a portrait of the Statue of Liberty on the wall on the left"
+  guided_prompt:
+    [["a vase with ", " in it on the right on a table next to a wooden framed decorations on the wall on the left"], ["a vase with leaves in it on the right on a table next to ", " on the wall on the left"]]
+  origin_change:
+    ['leaves', 'wooden framed decorations']
+  target_change:
+    ['a clipart lollipop', 'a portrait of the Statue of Liberty']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_032:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_032.png"
+  origin_prompt:
+    "a vase with leaves in it on the right on a table next to a wooden framed decorations on the wall on the left"
+  target_prompt:
+    "a vase with a bunch of roses in it on the right on a table next to a self-portrait of Van Gogh on the wall on the left"
+  guided_prompt:
+    [["a vase with ", " in it on the right on a table next to a wooden framed decorations on the wall on the left"], ["a vase with leaves in it on the right on a table next to ", " on the wall on the left"]]
+  origin_change:
+    ['leaves', 'wooden framed decorations']
+  target_change:
+    ['a bunch of roses', 'a self-portrait of Van Gogh']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_033:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_033.png"
+  origin_prompt:
+    "a cylindrical hay bale lies on ground under a blue sky with a few clouds"
+  target_prompt:
+     "a swiss roll lies on lavender under a blue sky with a few clouds"
+  guided_prompt:
+    [["a ", " lies on ground under a blue sky with a few clouds"], ["a cylindrical hay bale lies on ", " under a blue sky with a few clouds"]]
+  origin_change:
+    ['cylindrical hay bale', 'ground']
+  target_change:
+    ['swiss roll', 'lavender']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_034:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_034.png"
+  origin_prompt:
+    "a cylindrical hay bale lies on a dry field under a blue sky with a few clouds"
+  target_prompt:
+    "a colorful Christmas gift box floats on a sparkling ocean under a blue sky with a few clouds"
+  guided_prompt:
+    [["", "floats on a dry field under a blue sky with a few clouds"], ["a cylindrical hay bale floats on ", " under a blue sky with a few clouds"]]
+  origin_change:
+    ['the biggest cylindrical hay bale', 'dry field']
+  target_change:
+    ['a colorful Christmas gift box', 'a sparkling ocean']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_035:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_035.png"
+  origin_prompt:
+    "the man wearing an astronaut helmet with nothing in the helmet mirror stood in the center of a patch of tall grass with flowers in his hands"
+  target_prompt:
+    "the man wearing an astronaut helmet with nothing in the helmet mirror stood in the center of a patch of lavender with a bunch of roses in his hands"
+  guided_prompt:
+    [["the man wearing an astronaut helmet with nothing in the helmet mirror stood in the center of a patch of ", " with flowers in his hands"], ["the man wearing an astronaut helmet with nothing in the helmet mirror stood in the center of a patch of tall grass with ", " in his hands"]]
+  origin_change:
+    ["tall grass", 'flowers']
+  target_change:
+    ["lavender", 'a bunch of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_036:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_036.png"
+  origin_prompt:
+    "a man wearing a space helmet holding flowers in a field"
+  target_prompt:
+    "a man wearing a horse-headed mask holding a bunch of roses in a field"
+  guided_prompt:
+    [["a man wearing a ", " holding flowers in a field"], ["a man wearing a space helmet holding ", " in a field"]]
+  origin_change:
+    ['space helmet and mask', 'flowers']
+  target_change:
+    ['horse-headed mask', 'a bunch of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_037:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_037.png"
+  origin_prompt:
+    "a man wearing a space helmet holding flowers in a field"
+  target_prompt:
+    "a man wearing a deer-headed mask holding a bunch of roses in a field"
+  guided_prompt:
+    [["a man wearing a ", " holding flowers in a field"], ["a man wearing a space helmet holding ", " in a field"]]
+  origin_change:
+    ['space helmet and mask', 'flowers']
+  target_change:
+    ['deer-headed mask', 'a bunch of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+  
+multi_object_038:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_038.png"
+  origin_prompt:
+    "a man wearing a space helmet holding flowers in a field"
+  target_prompt:
+    "a man with a unicorn's head holding a bunch of roses in a field"
+  guided_prompt:
+    [["a man ", " holding flowers in a field"], ["a man wearing a space helmet holding ", " in a field"]]
+  origin_change:
+    ['space helmet and mask', 'flowers']
+  target_change:
+    ["with a unicorn's head", 'a bunch of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_039:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_039.png"
+  origin_prompt:
+    "a man wearing a space helmet holding flowers in a field"
+  target_prompt:
+    "a man wearing a goat-headed mask holding a bunch of roses in a field"
+  guided_prompt:
+    [["a man wearing a ", " holding flowers in a field"], ["a man wearing a space helmet holding ", " in a field"]]
+  origin_change:
+    ['space helmet and mask', 'flowers']
+  target_change:
+    ['goat-headed mask', 'a bunch of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_040:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_040.png"
+  origin_prompt:
+    "a man in a space helmet holding flowers in a field"
+  target_prompt:
+    "a man in a space helmet holding a bunch of roses in a field full of roses"
+  guided_prompt:
+    [["a man in a space helmet holding ", " in a field"], ["a man in a space helmet holding flowers in ", ""]]
+  origin_change:
+    ['flowers', 'a field']
+  target_change:
+    ['a bunch of roses', 'a field full of roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_041:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_041.png"
+  origin_prompt:
+    "a man in a space helmet holding flowers in a field with a gray sky in the background"
+  target_prompt:
+    "a man in a space helmet holding a bunch of roses in a field with a sky like The Starry Night of Vincent van Gogh in the background"
+  guided_prompt:
+    [["a man in a space helmet holding ", " in a field with a gray sky in the background"], ["a man in a space helmet holding flowers in a field with ", " in the background",]]
+  origin_change:
+    ['flowers', 'a gray sky']
+  target_change:
+    ['a bunch of roses', 'a sky like The Starry Night of Vincent van Gogh']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_042:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_042.png"
+  origin_prompt:
+    "a man walks on a asphalt road with a white sky in the background"
+  target_prompt:
+    "a man walks on a railway track with an aurora sky in the background"
+  guided_prompt:
+    [["a man walks on ", " with a white sky in the background"], ["a man walks on a road with ", " in the background"]]
+  origin_change:
+    ['a asphalt road', 'a white sky']
+  target_change:
+    ['a railway track', 'an aurora sky']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_043:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_043.png"
+  origin_prompt:
+    "a man walks on a asphalt road with a white sky in the background"
+  target_prompt:
+    "a man walks on a railway track with a sky like The Starry Night of Vincent van Gogh in the background"
+  guided_prompt:
+    [["a man walks on ", " with a white sky in the background"], ["a man walks on a road with ", " in the background"]]
+  origin_change:
+    ['a asphalt road', 'a white sky']
+  target_change:
+    ['a railway track', 'a sky like The Starry Night of Vincent van Gogh']
+  reinversion_steps:
+    10
+  reassembly_step:
+    1
+
+multi_object_044:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_044.png"
+  origin_prompt:
+    "a man wearing a white spacesuit is standing on top of a mountain looking at a glass sphere surrounded by rings"
+  target_prompt:
+    "Iron Man is standing on top of a mountain looking at a UFO"
+  guided_prompt:
+    [["", " is standing on top of a mountain looking at a glass sphere surrounded by rings"], ["a man wearing a white spacesuit is standing on top of a mountain looking at ", ""]]
+  origin_change:
+    ['a man wearing a white spacesuit', 'a glass sphere surrounded by rings']
+  target_change:
+    ['Iron Man', 'a UFO']
+  reinversion_steps:
+    10
+  reassembly_step:
+    25
+
+multi_object_045:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_045.png"
+  origin_prompt:
+    "two hands holding a full moon in the water"
+  target_prompt:
+    "two hands holding a bloody eyeball in the blazing fire"
+  guided_prompt:
+    [["two hands holding ", " in the water"], ["two hands holding a full moon in the ",""]]
+  origin_change:
+    ['a full moon', 'water']
+  target_change:
+    ['a bloody eyeball', 'blazing fire']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_046:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_046.png"
+  origin_prompt:
+    "a shack in the desert with a surfboard next to it with a pure blue sky in the background"
+  target_prompt:
+    "a castle in the desert with the Milky Way sky in the background"
+  guided_prompt:
+    [["a ", " with a pure blue sky in the background"], ["a shack in the desert with a surfboard next to it with ", ""]]
+  origin_change:
+    ['a shack in the desert and a surfboard', 'a pure blue sky']
+  target_change:
+    ['castle in the desert', 'the Milky Way sky in the background']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_047:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_047.png"
+  origin_prompt:
+    "a wooden chair on the green grass"
+  target_prompt:
+    "a golden chair on the wooden floor"
+  guided_prompt:
+    [["a ", " on the green grass"], ["a wooden chair on the ", ""]]
+  origin_change:
+    ['a wooden chair','green grass']
+  target_change:
+    ['golden chair', 'wooden floor']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_048:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_048.png"
+  origin_prompt:
+    "an astronaut wearing a white spacesuit stands in the middle of the sea, and three beams of light pass through the center of a pink cloud"
+  target_prompt:
+    "an mecha robot stands in the middle of the sea, and three beams of light pass through the center of a spaceship"
+  guided_prompt:
+    [["", " stands in the middle of the sea, and three beams of light pass through the center of a pink cloud"], ["an astronaut wearing a white spacesuit stands in the middle of the sea, and three beams of light pass through the center of a ", ""]]
+  origin_change:
+    ['an astronaut wearing a white spacesuit', 'a pink cloud']
+  target_change:
+    ['a mecha robot', 'spaceship']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_049:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_049.png"
+  origin_prompt:
+    "silhouette of a lone tree on a hill with the full moon behind it"
+  target_prompt:
+    "silhouette of a lone sunflower on a hill with the crescent moon behind it"
+  guided_prompt:
+    [["silhouette of a lone ", " on a hill with the full moon behind it"], ["silhouette of a lone tree on a hill with the ", " behind it"]]
+  origin_change:
+    ['a lone tree', 'full moon']
+  target_change:
+    ['sunflower', 'crescent moon']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_050:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_050.png"
+  origin_prompt:
+    "a monitor with a keyboard connected"
+  target_prompt:
+    "a gift box with a game controller connected"
+  guided_prompt:
+    [["", " with a keyboard connected"], ["a monitor with a ", " connected"]]
+  origin_change:
+    ['a monitor', 'a keyboard']
+  target_change:
+    ['a gift box', 'game controller']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_051:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_051.png"
+  origin_prompt:
+    "a TV set on a bench in a patch of bushes"
+  target_prompt:
+    "a TV playing a cartoon picture set on a crochet bench in a patch of bushes"
+  guided_prompt:
+    [["a ", " set on a bench in a patch of bushes"], ["a TV set on a ", " in a patch of bushes"]]
+  origin_change:
+    ['a TV', 'a bench']
+  target_change:
+    ['TV playing a cartoon picture', 'crochet bench']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_052:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_052.png"
+  origin_prompt:
+    "a pile of rocks on the grass of hilltop with mountains in the background"
+  target_prompt:
+    "a pile of cakes on a picnic mat on the lavender field of hilltop with mountains in the background"
+  guided_prompt:
+    [["a pile of ", " on the grass of hilltop with mountains in the background"], ["a pile of rocks on the ", " of hilltop with mountains in the background"]]
+  origin_change:
+    ['a pile of rocks', 'the grass of hilltop']
+  target_change:
+    ['cakes on a picnic mat', 'lavender field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_053:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_053.png"
+  origin_prompt:
+    "a rabbit is sitting in the grass, and there are some daisies in the grass"
+  target_prompt:
+    "a fox is sitting in the grass, and there are some roses in the grass"
+  guided_prompt:
+    [["a ", " is sitting in the grass, and there are some daisies in the grass"], ["a rabbit is sitting in the grass, and there are some ", " in the grass"]]
+  origin_change:
+    ['rabbit', 'daisies']
+  target_change:
+    ['fox', 'roses']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_054:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_054.png"
+  origin_prompt:
+    "a cat sits on a chair"
+  target_prompt:
+    "a dog sits on a golden throne"
+  guided_prompt:
+    [["", " sits on a chair"], ["a cat sits on a ", ""]]
+  origin_change:
+    ['cat and pillow', 'scarf and sofa']
+  target_change:
+    ['a dog', 'golden throne']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_055:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_055.png"
+  origin_prompt:
+    "a cat sits on a chair with a carpet"
+  target_prompt:
+    "an empty chair with a wooden floor"
+  guided_prompt:
+    [["", " with a carpet"], ["a cat sits on a chair with ", ""]]
+  origin_change:
+    ['scarf and sofa and cat and pillow', 'carpet']
+  target_change:
+    ['an empty chair', 'a wooden floor']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_056:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_056.png"
+  origin_prompt:
+    "a cat and pillow sits on a chair with a carpet"
+  target_prompt:
+    "a pillow on a crochet chair with a wooden floor"
+  guided_prompt:
+    [["", " with a carpet"], ["a cat sits on a chair with ", ""]]
+  origin_change:
+    ['scarf and sofa and cat and pillow', 'carpet']
+  target_change:
+    ['a pillow on a crochet chair', 'a wooden floor']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_057:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_057.png"
+  origin_prompt:
+    "a white cat and a glass cup"
+  target_prompt:
+    "a crochet cat and a golden cup"
+  guided_prompt:
+    [["a ", " and a glass cup"], ["a white cat and ", ""]]
+  origin_change:
+    ['a white cat', 'glass']
+  target_change:
+    ['crochet cat', 'a golden cup']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_058:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_058.png"
+  origin_prompt:
+    "a cat standing on top of a piano"
+  target_prompt:
+    "a lhasa apso standing on top of a brick wall"
+  guided_prompt:
+    [["", " standing on top of a piano"], ["a cat standing on top of ", ""]]
+  origin_change:
+    ['a cat', 'a piano']
+  target_change:
+    ['a lhasa apso', 'a brick wall']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_059:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_059.png"
+  origin_prompt:
+    "a cat standing on top of a piano"
+  target_prompt:
+    "a duck standing on top of a brick wall"
+  guided_prompt:
+    [["", " standing on top of a piano"], ["a cat standing on top of ", ""]]
+  origin_change:
+    ['a cat', 'a piano']
+  target_change:
+    ['a duck', 'a brick wall']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_060:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_060.png"
+  origin_prompt:
+    "a skull on top of a book"
+  target_prompt:
+    "a Captain America's head on top of a wooden box"
+  guided_prompt:
+    [["", " on top of a book"], ["a skull on top of ", ""]]
+  origin_change:
+    ['a skull', 'a book']
+  target_change:
+    ["a Captain America's head", 'a wooden box']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+ 
+multi_object_061:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_061.png"
+  origin_prompt:
+    "a cat sitting on a bean bag chair"
+  target_prompt:
+    "a tiger sitting on a pumpkin"
+  guided_prompt:
+    [["a ", " sitting on a bean bag chair"], ["a cat sitting on a ", ""]]
+  origin_change:
+    ['a cat', 'a bean bag chair']
+  target_change:
+    ['tiger', 'pumpkin']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_062:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_062.png"
+  origin_prompt:
+    "a cat sitting on a bean bag chair"
+  target_prompt:
+    "a bird sitting on a pumpkin"
+  guided_prompt:
+    [["a ", " sitting on a bean bag chair"], ["a cat sitting on a ", ""]]
+  origin_change:
+    ['a cat', 'a bean bag chair']
+  target_change:
+    ['bird', 'pumpkin']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_063:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_063.png"
+  origin_prompt:
+    "a cat sitting on a bean bag chair"
+  target_prompt:
+    "a dog sitting on a pumpkin"
+  guided_prompt:
+    [["a ", " sitting on a bean bag chair"], ["a cat sitting on a ", ""]]
+  origin_change:
+    ['a cat', 'a bean bag chair']
+  target_change:
+    ['dog', 'pumpkin']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_064:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_064.png"
+  origin_prompt:
+    "a cat sitting on a bean bag chair"
+  target_prompt:
+    "an owl sitting on a pumpkin"
+  guided_prompt:
+    [["an ", " sitting on a bean bag chair"], ["a cat sitting on a ", ""]]
+  origin_change:
+    ['a cat', 'a bean bag chair']
+  target_change:
+    ['owl', 'pumpkin']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_065:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_065.png"
+  origin_prompt:
+    "a rabbit wearing glasses lay on a book"
+  target_prompt:
+    "an origami rabbit wearing glasses lay on a newspaper"
+  guided_prompt:
+    [["", " lay on a book"], ["a rabbit wearing glasses lay on ", ""]]
+  origin_change:
+    ['a rabbit wearing glasses', 'a book']
+  target_change:
+    ['an origami rabbit wearing glasses', 'a newspaper']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_066:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_066.png"
+  origin_prompt:
+    "a monkey sitting on a stone pillar"
+  target_prompt:
+    "a tiger sitting on a wooden stake"
+  guided_prompt:
+    [["a ", " sitting on a stone pillar"], ["a monkey sitting on a ", ""]]
+  origin_change:
+    ['a monkey', 'a stone pillar']
+  target_change:
+    ['tiger', 'wooden stake']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_067:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_067.png"
+  origin_prompt:
+    "a wooden boat is placed on a green lake"
+  target_prompt:
+    "a Lego boat is placed on a green grass field"
+  guided_prompt:
+    [["a ", " is placed on a green lake"], ["a wooden boat is placed on ", ""]]
+  origin_change:
+    ['a wooden boat', 'a green lake']
+  target_change:
+    ['Lego boat', 'a green grass field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_068:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_068.png"
+  origin_prompt:
+    "a wooden boat is placed on a green lake"
+  target_prompt:
+    "a Lego boat is placed on a grass field"
+  guided_prompt:
+    [["a ", " is placed on a green lake"], ["a wooden boat is placed on ", ""]]
+  origin_change:
+    ['a wooden boat', 'a green lake']
+  target_change:
+    ['Lego boat', 'a grass field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_069:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_069.png"
+  origin_prompt:
+    "a wooden boat is placed on a green lake"
+  target_prompt:
+    "a Lego boat is placed on a green furry blanket"
+  guided_prompt:
+    [["a ", " is placed on a green lake"], ["a wooden boat is placed on ", ""]]
+  origin_change:
+    ['a wooden boat', 'a green lake']
+  target_change:
+    ['Lego boat', 'a green furry blanket']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_070:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_070.png"
+  origin_prompt:
+    "a white boat on a blue sea"
+  target_prompt:
+    "a white spacecraft on a sky with a few stars"
+  guided_prompt:
+    [["a ", " on a blue sea"], ["a white boat on ", ""]]
+  origin_change:
+    ['a wooden boat', 'a blue sea']
+  target_change:
+    ['white spacecraft', 'a sky with a few stars']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_071:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_071.png"
+  origin_prompt:
+    "a white boat on a blue sea"
+  target_prompt:
+    "a white spacecraft on a furry blanket"
+  guided_prompt:
+    [["a ", " on a blue sea"], ["a white boat on ", ""]]
+  origin_change:
+    ['a wooden boat', 'a blue sea']
+  target_change:
+    ['white spacecraft', 'a furry blanket']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_072:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_072.png"
+  origin_prompt:
+    "a small metal yellow toy car is placed on the gray ground"
+  target_prompt:
+    "a small wooden toy car is placed on the green grass"
+  guided_prompt:
+    [["a small ", " is placed on the gray ground"], ["a small metal yellow toy car is placed on ", ""]]
+  origin_change:
+    ['a metal yellow toy car', 'a gray ground']
+  target_change:
+    ['wooden toy car', 'the green grass']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_073:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_073.png"
+  origin_prompt:
+    "a small metal yellow toy car is placed on a gray ground"
+  target_prompt:
+    "a small wooden toy car is placed on a gray furry carpet"
+  guided_prompt:
+    [["a small ", " is placed on a gray ground"], ["a small metal yellow toy car is placed on ", ""]]
+  origin_change:
+    ['a metal yellow toy car', 'a gray ground']
+  target_change:
+    ['wooden toy car', 'a gray furry carpet']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_074:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_074.png"
+  origin_prompt:
+    "a man wearing a helmet stands on a motorcycle"
+  target_prompt:
+    "a man wearing a Spider-Man mask stands on a Lego motorcycle"
+  guided_prompt:
+    [["", " stands on a motorcycle"], ["a man in black clothes and a helmet stands on ", ""]]
+  origin_change:
+    ['a man in black clothes and a helmet', 'a motorcycle']
+  target_change:
+    ['a man wearing a Spider-Man mask', 'a Lego motorcycle']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_075:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_075.png"
+  origin_prompt:
+    "a small metal blue toy truck is placed on the gray ground"
+  target_prompt:
+    "a small Lego toy truck is placed on the wooden floor"
+  guided_prompt:
+    [["a small ", " is placed on the gray ground"], ["a small metal blue toy truck is placed on the ", ""]]
+  origin_change:
+    ['a small metal blue toy truck', 'the gray ground']
+  target_change:
+    ['Lego toy truck', 'wooden floor']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_076:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_076.png"
+  origin_prompt:
+    "a sports car parked on the road with sand dunes in the background"
+  target_prompt:
+    "a crochet sports car on the road with rocks in the background"
+  guided_prompt:
+    [["", " parked on the road with sand dunes in the background"], ["a sports car parked on the road with ", " in the background"]]
+  origin_change:
+    ['a sports car', 'sand dunes']
+  target_change:
+    ['a crochet sports car', "rocks"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_077:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_077.png"
+  origin_prompt:
+    "a light bulb with a filament placed on top of a book"
+  target_prompt:
+    "a white rose placed on top of a gift box"
+  guided_prompt:
+    [["", " placed on top of a book"], ["a light bulb with a filament placed on top of a ", ""]]
+  origin_change:
+    ['filament', 'a book']
+  target_change:
+    ['a white rose', 'a gift box']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_078:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_078.png"
+  origin_prompt:
+    "a light bulb with a filament placed on top of a book"
+  target_prompt:
+    "a white rose placed on top of a cluster of wool"
+  guided_prompt:
+    [["", " placed on top of a book"], ["a light bulb with a filament placed on top of a ", ""]]
+  origin_change:
+    ['filament', 'a book']
+  target_change:
+    ['a white rose', 'a cluster of wool']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_079:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_079.png"
+  origin_prompt:
+    "a big tree on the grass by the sea"
+  target_prompt:
+    "a big broccoli on the green grass field by the sea"
+  guided_prompt:
+    [["a big ", " on the grass by the sea"], ["a big tree on the ", " by the sea"]]
+  origin_change:
+    ['a big tree', 'grass']
+  target_change:
+    ['broccoli', 'green grass field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_080:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_080.png"
+  origin_prompt:
+    "a green house in the middle of a grassy field"
+  target_prompt:
+    "a green Lego house in the middle of a field full of yellow leaves"
+  guided_prompt:
+    [["a ", " in the middle of a grassy field"], ["a green house in the middle of ", ""]]
+  origin_change:
+    ['green house', 'a grassy field']
+  target_change:
+    ['green Lego house', 'a field full of yellow leaves']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_081:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_081.png"
+  origin_prompt:
+    "a green house in the middle of a grassy field"
+  target_prompt:
+    "a castle in the middle of a snow-covered field"
+  guided_prompt:
+    [["a ", " in the middle of a grassy field"], ["a green house in the middle of ", ""]]
+  origin_change:
+    ['green house', 'a grassy field']
+  target_change:
+    ['castle', 'a snow-covered field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_082:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_082.png"
+  origin_prompt:
+    "a green house in the middle of a grassy field with moutains and trees in the background"
+  target_prompt:
+    "a green house in the middle of a field full of yellow leaves with yellow moutains and trees in autumn in the background"
+  guided_prompt:
+    [["a green house in the middle of ", " with moutains and trees in the background"], ["a green house in the middle of a grassy field with ", " in the background"]]
+  origin_change:
+    ['a grassy field', 'moutains and trees']
+  target_change:
+    ['a field full of yellow leaves', 'yellow moutains and trees in autumn']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_083:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_083.png"
+  origin_prompt:
+    "a green house in the middle of a grassy field"
+  target_prompt:
+    "a green castle in the middle of a snowy field"
+  guided_prompt:
+    [["a ", " in the middle of a grassy field"], ["a green house in the middle of ", ""]]
+  origin_change:
+    ['green house', 'a grassy field']
+  target_change:
+    ['green castle', 'a snowy field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_084:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_084.png"
+  origin_prompt:
+    "a green house in the middle of a grassy field with moutains and trees in the background"
+  target_prompt:
+    "a green house in the middle of a field full of snow with snowy moutains and trees in winter in the background"
+  guided_prompt:
+    [["a green house in the middle of ", " with moutains and trees in the background"], ["a green house in the middle of a grassy field with ", " in the background"]]
+  origin_change:
+    ['a grassy field', 'moutains and trees']
+  target_change:
+    ['a field full of snow', 'snowy moutains and trees in winter']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_085:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_085.png"
+  origin_prompt:
+    "a small plant in a human hand"
+  target_prompt:
+    "a small Lego plant on a wooden table"
+  guided_prompt:
+    [["a ", " in a human hand"], ["a small plant on ", ""]]
+  origin_change:
+    ['a small plant', 'a human hand']
+  target_change:
+    ['small Lego plant', "a wooden table"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_086:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_086.png"
+  origin_prompt:
+    "a small plant in a human hand"
+  target_prompt:
+    "a small Lego plant in a flowerpot"
+  guided_prompt:
+    [["a ", " in a human hand"], ["a small plant in ", ""]]
+  origin_change:
+    ['a small plant', 'a human hand']
+  target_change:
+    ['small Lego plant', "a flowerpot"]
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_087:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_087.png"
+  origin_prompt:
+    "a log cabin sits in the middle of a forest"
+  target_prompt:
+    "a crochet house sits in the middle of a yellow forest in autumn"
+  guided_prompt:
+    [["a ", " sits in the middle of a forest"], ["a log cabin sits in the middle of a ", ""]]
+  origin_change:
+    ['a log cabin', 'a forest']
+  target_change:
+    ['crochet house', 'a yellow forest in autumns']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_088:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_088.png"
+  origin_prompt:
+    "a large airplane flying through a cloudy sky"
+  target_prompt:
+    "a origami airplane flying through an aurora sky"
+  guided_prompt:
+    [["", " flying through a cloudy sky"], ["a large airplane flying through ", ""]]
+  origin_change:
+    ['a large airplane', 'a cloudy sky']
+  target_change:
+    ['an origami airplane', 'an aurora sky']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_089:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_089.png"
+  origin_prompt:
+    "two astronauts looking at a spacecraft in the desert"
+  target_prompt:
+    "two Spider-Man looking at a monument in the desert"
+  guided_prompt:
+    [["", " looking at a spacecraft in the desert"], ["two astronauts looking at a ", " in the desert"]]
+  origin_change:
+    ['two astronauts', 'a spacecraft']
+  target_change:
+    ['two Spider-Man', 'monument']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_090:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_090.png"
+  origin_prompt:
+    "two astronauts looking at a spacecraft in the desert"
+  target_prompt:
+    "two Iron-Man looking at a monument in the desert"
+  guided_prompt:
+    [["", " looking at a spacecraft in the desert"], ["two astronauts looking at a ", " in the desert"]]
+  origin_change:
+    ['two astronauts', 'a spacecraft']
+  target_change:
+    ['two Iron-Man', 'monument']
+  reinversion_steps:
+    10
+  reassembly_step:
+    20
+
+multi_object_091:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_091.png"
+  origin_prompt:
+    "two astronauts looking at a spacecraft in the desert"
+  target_prompt:
+    "two soldiers looking at a monument in the desert"
+  guided_prompt:
+    [["", " looking at a spacecraft in the desert"], ["two astronauts looking at a ", " in the desert"]]
+  origin_change:
+    ['two astronauts', 'a spacecraft']
+  target_change:
+    ['two soldiers', 'monument']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_092:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_092.png"
+  origin_prompt:
+    "a red and white airplane flying in the sky"
+  target_prompt:
+    "a red and white Lego airplane flying through the close shot of the moon"
+  guided_prompt:
+    [["", " flying in the sky"], ["a red and white airplane flying ", ""]]
+  origin_change:
+    ['a red and white airplane', 'the sky']
+  target_change:
+    ['a red and white Lego airplane', 'through the close shot of the moon']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_093:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_093.png"
+  origin_prompt:
+    "a bird with colorful feathers is sitting on a branch"
+  target_prompt:
+    "a crochet bird with colorful feathers is sitting on a gold branch"
+  guided_prompt:
+    [["", " with colorful feathers is sitting on a branch"], ["a bird with colorful feathers is sitting on ", ""]]
+  origin_change:
+    ['a bird', 'a branch']
+  target_change:
+    ['a crochet bird', 'a gold branch']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_094:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_094.png"
+  origin_prompt:
+    "a blue and yellow parrot is sitting on a branch"
+  target_prompt:
+    "a blue and yellow crochet parrot is sitting on a gold branch"
+  guided_prompt:
+    [["", " is sitting on a branch"], ["a blue and yellow parrot is sitting on ", ""]]
+  origin_change:
+    ['a blue and yellow parrot', 'a branch']
+  target_change:
+    ['a blue and yellow crochet parrot', 'a gold branch']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_095:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_095.png"
+  origin_prompt:
+    "a blue and yellow parrot is sitting on a branch"
+  target_prompt:
+    "a blue and yellow origami parrot is sitting on an icicle"
+  guided_prompt:
+    [["", " is sitting on a branch"], ["a blue and yellow parrot is sitting on ", ""]]
+  origin_change:
+    ['a blue and yellow parrot', 'a branch']
+  target_change:
+    ['a blue and yellow origami parrot', 'an icicle']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_096:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_096.png"
+  origin_prompt:
+    "a blue and yellow parrot is sitting on a branch"
+  target_prompt:
+    "a blue and yellow Lego parrot is sitting on a flower"
+  guided_prompt:
+    [["", " is sitting on a branch"], ["a blue and yellow parrot is sitting on ", ""]]
+  origin_change:
+    ['a blue and yellow parrot', 'a branch']
+  target_change:
+    ['a blue and yellow Lego parrot', 'a flower']
+  reinversion_steps:
+    10
+  reassembly_step:
+    15
+
+multi_object_097:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_097.png"
+  origin_prompt:
+    "a toy wall-e robot is standing in water"
+  target_prompt:
+    "a toy Lego wall-e robot is standing in a grass field"
+  guided_prompt:
+    [["a toy ", " is standing in water"], ["a toy wall-e robot is standing ", ""]]
+  origin_change:
+    ['a toy wall-e robot', 'water']
+  target_change:
+    ['Lego wall-e robot', 'in a grass field']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_098:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_098.png"
+  origin_prompt:
+    "a toy wall-e robot is standing in water"
+  target_prompt:
+    "a toy wooden wall-e robot is standing on a cluster of flowers"
+  guided_prompt:
+    [["a toy ", " is standing in water"], ["a toy wall-e robot is standing on ", ""]]
+  origin_change:
+    ['a toy wall-e robot', 'water']
+  target_change:
+    ['wooden wall-e robot', 'a cluster of flowers']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_099:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_099.png"
+  origin_prompt:
+    "a toy wall-e robot is standing in water"
+  target_prompt:
+    "a toy crochet wall-e robot is standing on a pile of confetti"
+  guided_prompt:
+    [["a toy ", " is standing in water"], ["a toy wall-e robot is standing ", ""]]
+  origin_change:
+    ['a toy wall-e robot', 'water']
+  target_change:
+    ['crochet wall-e robot', 'on a pile of confetti']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
+
+multi_object_100:
+  image_path:
+    "OIR-Bench/multi_object/dataset/multi_object_100.png"
+  origin_prompt:
+    "a toy wall-e robot is standing in water"
+  target_prompt:
+    "a toy origami wall-e robot is standing on a table"
+  guided_prompt:
+    [["a toy ", " is standing in water"], ["a toy wall-e robot is standing ", ""]]
+  origin_change:
+    ['a toy wall-e robot', 'water']
+  target_change:
+    ['origami wall-e robot', 'on a table']
+  reinversion_steps:
+    10
+  reassembly_step:
+    10
