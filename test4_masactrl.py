@@ -162,82 +162,81 @@ output_dir_root = 'results_masa'
 
 inverse_prompt = ''
 
-for idx, key in enumerate(args.keys()):
-    SOURCE_IMAGE_PATH = args[key]['image_path']
+SOURCE_IMAGE_PATH = args[key]['image_path']
 
-    target_prompt = args[key]['target_prompt']
-    targets = args[key]['target_change']
+target_prompt = args[key]['target_prompt']
+targets = args[key]['target_change']
 
-    # ids = pipe.tokenizer(target_prompt).input_ids
-    # indices = {i: tok for tok, i in zip(pipe.tokenizer.convert_ids_to_tokens(ids), range(len(ids)))}
-    # print(indices)
+# ids = pipe.tokenizer(target_prompt).input_ids
+# indices = {i: tok for tok, i in zip(pipe.tokenizer.convert_ids_to_tokens(ids), range(len(ids)))}
+# print(indices)
 
-    def load_image(image_path, device):
-        image = read_image(image_path)
-        image = image[:3].unsqueeze_(0).float() / 127.5 - 1.  # [-1, 1]
-        image = F.interpolate(image, (512, 512))
-        image = image.to(device)
-        return image
+def load_image(image_path, device):
+    image = read_image(image_path)
+    image = image[:3].unsqueeze_(0).float() / 127.5 - 1.  # [-1, 1]
+    image = F.interpolate(image, (512, 512))
+    image = image.to(device)
+    return image
 
-    source_image = load_image(SOURCE_IMAGE_PATH, device)
+source_image = load_image(SOURCE_IMAGE_PATH, device)
 
-    latents, latents_list = pipe.invert(source_image,
-                                        inverse_prompt,
-                                        guidance_scale=7.5,
-                                        num_inference_steps=50,
-                                        return_intermediates=True,
-                                        )
+latents, latents_list = pipe.invert(source_image,
+                                    inverse_prompt,
+                                    guidance_scale=7.5,
+                                    num_inference_steps=50,
+                                    return_intermediates=True,
+                                    )
 
-    prompts = ['', # args[key]['origin_prompt']
-                target_prompt] # target_prompt
+prompts = ['', # args[key]['origin_prompt']
+            target_prompt] # target_prompt
 
-    latents = latents.expand((2, 4, 64, 64))
-
-
-    mask, x, y, w, h = find_bounding_box(f'OIR-Bench/new_multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][0]}.png')
-    mask = torch.from_numpy(mask).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
-    mask = torch.where(mask > 0, 1.0, 0.0).float().to(device).view(1, 1, 64, 64)
-
-    mask2, x2, y2, w2, h2 = find_bounding_box(f'OIR-Bench/new_multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][1]}.png')
-    mask2 = torch.from_numpy(mask2).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
-    mask2 = torch.where(mask2 > 0, 1.0, 0.0).float().to(device).view(1, 1, 64, 64)
-
-    masks = [mask, mask2]
-
-    # mask = torch.from_numpy(np.array(Image.open(f'OIR-Bench/multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][0]}.png').resize((64, 64)))).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
-    # mask = torch.where(mask > 0, 1.0, 0.0)
-    # mask = cv2.dilate(mask.cpu().numpy(), np.ones((3, 3), np.uint8), iterations=10)
-    # mask = torch.from_numpy(mask).float().to(device).view(1, 1, 64, 64)
+latents = latents.expand((2, 4, 64, 64))
 
 
-    source = np.array(Image.open(SOURCE_IMAGE_PATH).resize((512, 512)))
-    cv2.rectangle(source, (x, y), (x+w, y+h), (0, 255, 0), 2)
-    cv2.rectangle(source, (x2, y2), (x2+w2, y2+h2), (0, 255, 0), 2)
-    new_image = Image.new('RGB', (512*6, 512))
-    new_image.paste(Image.fromarray(source), (0, 0))
-    
-    for idx_num, grad_scale in enumerate([50, 500, 1000, 2500, 5000]):
-        editor = MutualSelfAttentionControl(8, 10)
-        regiter_attention_editor_diffusers(pipe, editor)
-        pipe.controller = editor
+mask, x, y, w, h = find_bounding_box(f'OIR-Bench/new_multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][0]}.png')
+mask = torch.from_numpy(mask).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
+mask = torch.where(mask > 0, 1.0, 0.0).float().to(device).view(1, 1, 64, 64)
 
-        outputs = pipe(prompt=prompts, height=512, width=512, num_inference_steps=50, latents=latents.clone(),
-                    ref_intermediate_latents=latents_list,
-                    masks=masks,
-                    targets=targets,
-                    token_indices=args[key]['token_indices'],
-                    grad_scale=grad_scale).images # ref_intermediate_latents=latents_list
+mask2, x2, y2, w2, h2 = find_bounding_box(f'OIR-Bench/new_multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][1]}.png')
+mask2 = torch.from_numpy(mask2).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
+mask2 = torch.where(mask2 > 0, 1.0, 0.0).float().to(device).view(1, 1, 64, 64)
 
-        new_image.paste(outputs[1], (512*(idx_num+1), 0))
+masks = [mask, mask2]
 
-    
-    generation_image_path = os.path.join(output_dir_root, SOURCE_IMAGE_PATH.split("/")[-1])
-    if not os.path.exists(generation_image_path):
-        os.makedirs(generation_image_path)
-    new_image.save(os.path.join(generation_image_path, target_prompt + '.png'))
+# mask = torch.from_numpy(np.array(Image.open(f'OIR-Bench/multi_object/mask/{SOURCE_IMAGE_PATH.split("/")[-1].split(".")[0]}/{args[key]["origin_change"][0]}.png').resize((64, 64)))).float().to(device) # multi_object_001/a cat.png multi_object_002/leaves.png multi_object_003/cat on the left.png
+# mask = torch.where(mask > 0, 1.0, 0.0)
+# mask = cv2.dilate(mask.cpu().numpy(), np.ones((3, 3), np.uint8), iterations=10)
+# mask = torch.from_numpy(mask).float().to(device).view(1, 1, 64, 64)
 
-    source_images.append(Image.open(SOURCE_IMAGE_PATH).resize((256,256)))
-    generated_images.append(outputs[1].resize((256,256)))
-    eval_prompts.append(target_prompt)
 
-    print(os.path.join(generation_image_path, target_prompt + '.png'))
+source = np.array(Image.open(SOURCE_IMAGE_PATH).resize((512, 512)))
+cv2.rectangle(source, (x, y), (x+w, y+h), (0, 255, 0), 2)
+cv2.rectangle(source, (x2, y2), (x2+w2, y2+h2), (0, 255, 0), 2)
+new_image = Image.new('RGB', (512*6, 512))
+new_image.paste(Image.fromarray(source), (0, 0))
+
+for idx_num, grad_scale in enumerate([50, 500, 1000, 2500, 5000]):
+    editor = MutualSelfAttentionControl(8, 10)
+    regiter_attention_editor_diffusers(pipe, editor)
+    pipe.controller = editor
+
+    outputs = pipe(prompt=prompts, height=512, width=512, num_inference_steps=50, latents=latents.clone(),
+                ref_intermediate_latents=latents_list,
+                masks=masks,
+                targets=targets,
+                token_indices=args[key]['token_indices'],
+                grad_scale=grad_scale).images # ref_intermediate_latents=latents_list
+
+    new_image.paste(outputs[1], (512*(idx_num+1), 0))
+
+
+generation_image_path = os.path.join(output_dir_root, SOURCE_IMAGE_PATH.split("/")[-1])
+if not os.path.exists(generation_image_path):
+    os.makedirs(generation_image_path)
+new_image.save(os.path.join(generation_image_path, target_prompt + '.png'))
+
+source_images.append(Image.open(SOURCE_IMAGE_PATH).resize((256,256)))
+generated_images.append(outputs[1].resize((256,256)))
+eval_prompts.append(target_prompt)
+
+print(os.path.join(generation_image_path, target_prompt + '.png'))
