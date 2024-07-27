@@ -43,6 +43,9 @@ from masactrl.masactrl_utils import AttentionBase
 from masactrl.masactrl_utils import regiter_attention_editor_diffusers
 from masactrl.masactrl import MutualSelfAttentionControl
 
+from config import RunConfig
+
+args = RunConfig()
 
 def transform_variable_name(input_str, attn_map_save_step):
     # Split the input string into parts using the dot as a separator
@@ -154,13 +157,6 @@ source_images = []
 generated_images = []
 eval_prompts = []
 
-import argparse
-
-parser = argparse.ArgumentParser()
-parser.add_argument("--source", type=str, default=None)
-parser.add_argument("--prompt", type=str, default=None)
-parser.add_argument("--output_dir_root", type=str, default="/content/")
-args = parser.parse_args()
 
 output_dir_root = args.output_dir_root
 
@@ -169,7 +165,9 @@ inverse_prompt = ''
 SOURCE_IMAGE_PATH = args.source
 
 target_prompt = args.prompt
-targets = args[key]['target_change']
+targets = args.targets
+
+print(targets)
 
 ids = pipe.tokenizer(target_prompt).input_ids
 indices = {i: tok for tok, i in zip(pipe.tokenizer.convert_ids_to_tokens(ids), range(len(ids)))}
