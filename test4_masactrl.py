@@ -148,28 +148,32 @@ from PIL import Image
 from tqdm import tqdm
 from torchvision.io import read_image
 import yaml, os
-
-with open('OIR-Bench/new_multi_object/new_multi_object.yaml', 'r') as file:
-    args = yaml.safe_load(file)
-
 from metrics.eval import *
 
 source_images = []
 generated_images = []
 eval_prompts = []
 
-output_dir_root = 'results_masa'
+import argparse
+
+parser = argparse.ArgumentParser(description="Simple example of a training script.")
+parser.add_argument("--source", type=str, default=None)
+parser.add_argument("--prompt", type=str, default=None)
+parser.add_argument("--output_dir_root", type=str, default="/content/")
+args = parser.parse_args()
+
+output_dir_root = args.output_dir_root
 
 inverse_prompt = ''
 
-SOURCE_IMAGE_PATH = args[key]['image_path']
+SOURCE_IMAGE_PATH = args.source
 
-target_prompt = args[key]['target_prompt']
+target_prompt = args.prompt
 targets = args[key]['target_change']
 
-# ids = pipe.tokenizer(target_prompt).input_ids
-# indices = {i: tok for tok, i in zip(pipe.tokenizer.convert_ids_to_tokens(ids), range(len(ids)))}
-# print(indices)
+ids = pipe.tokenizer(target_prompt).input_ids
+indices = {i: tok for tok, i in zip(pipe.tokenizer.convert_ids_to_tokens(ids), range(len(ids)))}
+print(indices)
 
 def load_image(image_path, device):
     image = read_image(image_path)
